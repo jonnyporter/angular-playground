@@ -69,19 +69,20 @@ rosterDiv.append(html);
 			<li class="list-group-item">
 				<span class="challenge">Write a math equation that Angular can evaluate</span>
 				<div class="answer">
-					{{<!--Your Code Here-->}}
+					<strong>{{ 2 + 2}}</strong>
 				</div>
 			</li>
 			<li class="list-group-item">
 				<span class="challenge">Using string concatination get the customary Hello, World! to display on the screen. Don't forget your quotes</span>
 				<div class="answer">
-					{{<!--Your Code Here-->}}
+					<strong>{{"Hello, " + "World"}}</strong>
 				</div>
 			</li>
 			<li class="list-group-item">
-				<span class="challenge">We have a controller driving this view. The controller is nothing more than an object with properties. One of the properties on the controller object is called test. Render the test property to the screen</span>
-				<div class="answer">
-					{{<!--Your Code Here-->}}
+				<span class="challenge">We have a controller driving this view. The controller is nothing more than an object with properties. 
+					One of the properties on the controller object is called test. Render the test property to the screen</span>
+				<div ng-controller="MyOwnFrikinController as myFrikinAlias" class="answer">
+					<strong>{{myFrikinAlias.isTheBomb}}</strong>
 				</div>
 			</li>
 		</ul>
